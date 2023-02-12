@@ -21,10 +21,10 @@ export default function Connect(){
        
         <div className="flex justify-center items-center text-3xl text-cyan-700 mt-10">Interested in sharing your ideas or wanna connect with me? Here it is...</div>
         <div className="text-3xl text-cyan-700 text-left md:text-center mt-2">You can also share your reviews</div>
-        <div className="flex flex-col justify-center items-center mt-8 text-cyan-600 text-2xl">
-            <div>Name- <input className="m-5" value={name} onChange={(e)=>setname(e.target.value)} /></div>
-            <div>Email- <input className="m-5" value={email} onChange={(e)=>setemail(e.target.value)} /></div>
-            <div>Comment- <input className="m-5" value={comment} onChange={(e)=>setcomment(e.target.value)} /></div>
+        <div className="flex flex-col justify-center items-center mt-8 text-cyan-600 dark:text-gray-700 text-2xl">
+            <div>Name- <input className="m-5 border-2 border-gray-700 rounded-md" value={name} onChange={(e)=>setname(e.target.value)} /></div>
+            <div>Email- <input className="m-5 border-2 border-gray-700 rounded-md" value={email} onChange={(e)=>setemail(e.target.value)} /></div>
+            <div>Comment- <input className="m-5 border-2 border-gray-700 rounded-md" value={comment} onChange={(e)=>setcomment(e.target.value)} /></div>
             <div className="flex justify-center bg-red-500 w-24 text-gray-300 mt-4 p-1 rounded-2xl transition ease-in-out hover:-translate-y-1"><button onClick={handlesubmit}>Done!</button></div>
         </div>
         
