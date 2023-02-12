@@ -41,17 +41,17 @@ export default function About(){
             <div className="text-cyan-600 text-4xl">Technology that i am familiar with...</div>
         </div>
         <div className='flex flex-wrap md:flex-row mt-20 justify-center items-center pb-10 font-mono'>
-            <div className='flex flex-col mx-4 transition ease-in-out hover:-translate-y-1 m-5' ><a href=""><ImHtmlFive style={{fontSize:'80px'}} /></a><div className="text-center text-xl font-bold text-cyan-700">Html</div></div>
-            <div className='flex flex-col mx-4 transition ease-in-out hover:-translate-y-1 m-5' ><a href=""><SiCss3 style={{fontSize:'80px'}} /></a><div className="text-center text-xl font-bold text-cyan-700">CSS</div></div>
-            <div className='flex flex-col mx-4 transition ease-in-out hover:-translate-y-1 m-5' ><a href=""><SiJavascript style={{fontSize:'80px'}} /></a><div className="text-center text-xl font-bold text-cyan-700">Javascipt</div></div>
-            <div className='flex flex-col mx-4 transition ease-in-out hover:-translate-y-1 m-5' ><a href=""><SiTailwindcss style={{fontSize:'80px'}} /></a><div className="text-center text-xl font-bold text-cyan-700">Tailwind</div></div>
-            <div className='flex flex-col mx-4 transition ease-in-out hover:-translate-y-1 m-5' ><a href=""><SiReact style={{fontSize:'80px'}} /></a><div className="text-center text-xl font-bold text-cyan-700">React</div></div>
-            <div className='flex flex-col mx-4 transition ease-in-out hover:-translate-y-1 m-5' ><a href=""><TbBrandNextjs style={{fontSize:'80px'}} /></a><div className="text-center text-xl font-bold text-cyan-700">Nextjs</div></div>
-            <div className='flex flex-col mx-4 transition ease-in-out hover:-translate-y-1 m-5' ><a href=""><SiSolidity style={{fontSize:'80px'}} /></a><div className="text-center text-xl font-bold text-cyan-700">Solidity</div></div>
-            <div className='flex flex-col mx-4 transition ease-in-out hover:-translate-y-1 m-5' ><a href=""><SiJava style={{fontSize:'80px'}} /></a><div className="text-center text-xl font-bold text-cyan-700">Java</div></div>
-            <div className='flex flex-col mx-4 transition ease-in-out hover:-translate-y-1 m-5' ><a href=""><SiCplusplus style={{fontSize:'80px'}} /></a><div className="text-center text-xl font-bold text-cyan-700">C++</div></div>
-            <div className='flex flex-col mx-4 transition ease-in-out hover:-translate-y-1 m-5' ><a href=""><TbLetterC style={{fontSize:'80px'}} /></a><div className="text-center text-xl font-bold text-cyan-700">C</div></div>
-            <div className='flex flex-col mx-4 transition ease-in-out hover:-translate-y-1 m-5' ><a href=""><SiFlutter style={{fontSize:'80px'}} /></a><div className="text-center text-xl font-bold text-cyan-700">Flutter</div></div>
+            <div className='flex flex-col mx-4 transition ease-in-out hover:-translate-y-1 m-5' ><a href="https://developer.mozilla.org/en-US/docs/Web/HTML"><ImHtmlFive style={{fontSize:'80px'}} /></a><div className="text-center text-xl font-bold text-cyan-700">Html</div></div>
+            <div className='flex flex-col mx-4 transition ease-in-out hover:-translate-y-1 m-5' ><a href="https://developer.mozilla.org/en-US/docs/Web/CSS"><SiCss3 style={{fontSize:'80px'}} /></a><div className="text-center text-xl font-bold text-cyan-700">CSS</div></div>
+            <div className='flex flex-col mx-4 transition ease-in-out hover:-translate-y-1 m-5' ><a href="https://www.javascript.com"><SiJavascript style={{fontSize:'80px'}} /></a><div className="text-center text-xl font-bold text-cyan-700">Javascipt</div></div>
+            <div className='flex flex-col mx-4 transition ease-in-out hover:-translate-y-1 m-5' ><a href="https://tailwindcss.com"><SiTailwindcss style={{fontSize:'80px'}} /></a><div className="text-center text-xl font-bold text-cyan-700">Tailwind</div></div>
+            <div className='flex flex-col mx-4 transition ease-in-out hover:-translate-y-1 m-5' ><a href="https://reactjs.org"><SiReact style={{fontSize:'80px'}} /></a><div className="text-center text-xl font-bold text-cyan-700">React</div></div>
+            <div className='flex flex-col mx-4 transition ease-in-out hover:-translate-y-1 m-5' ><a href="https://nextjs.org"><TbBrandNextjs style={{fontSize:'80px'}} /></a><div className="text-center text-xl font-bold text-cyan-700">Nextjs</div></div>
+            <div className='flex flex-col mx-4 transition ease-in-out hover:-translate-y-1 m-5' ><a href="https://docs.soliditylang.org/en/v0.8.15/index.html"><SiSolidity style={{fontSize:'80px'}} /></a><div className="text-center text-xl font-bold text-cyan-700">Solidity</div></div>
+            <div className='flex flex-col mx-4 transition ease-in-out hover:-translate-y-1 m-5' ><a href="https://www.java.com/en/"><SiJava style={{fontSize:'80px'}} /></a><div className="text-center text-xl font-bold text-cyan-700">Java</div></div>
+            <div className='flex flex-col mx-4 transition ease-in-out hover:-translate-y-1 m-5' ><a href="https://www.programiz.com/cpp-programming"><SiCplusplus style={{fontSize:'80px'}} /></a><div className="text-center text-xl font-bold text-cyan-700">C++</div></div>
+            <div className='flex flex-col mx-4 transition ease-in-out hover:-translate-y-1 m-5' ><a href="https://www.w3schools.com/c/c_intro.php"><TbLetterC style={{fontSize:'80px'}} /></a><div className="text-center text-xl font-bold text-cyan-700">C</div></div>
+            <div className='flex flex-col mx-4 transition ease-in-out hover:-translate-y-1 m-5' ><a href="https://flutter.dev"><SiFlutter style={{fontSize:'80px'}} /></a><div className="text-center text-xl font-bold text-cyan-700">Flutter</div></div>
         </div>
  
 
