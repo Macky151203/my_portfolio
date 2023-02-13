@@ -9,7 +9,7 @@ import Footer from "@/components/footer"
 export default function Home(){
   return (
     <>
-    <div className="bg-stone-800 dark:bg-gray-100">
+    <div className="bg-stone-800 dark:bg-gray-100 transition-colors duration-500">
     <Navbar />
     <Hero />
     <About />

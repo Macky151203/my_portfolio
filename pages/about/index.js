@@ -19,19 +19,19 @@ import {SiFlutter} from 'react-icons/si'
 export default function About(){
     return(
         <>
-        <div className="bg-stone-800 dark:bg-gray-100 pb-10">
+        <div className="bg-stone-800 dark:bg-gray-100 pb-10 transition-colors duration-500">
         <Navbar />
         <div className="flex flex-col justify-center items-center font-mono">
             
-                <div className="flex md:flex-row flex-col w-2/3  m-10 mt-24 rounded-3xl shadow-md">
+                <div className="flex md:flex-row flex-col w-2/3  m-10 mt-24 rounded-3xl dark:shadow-md">
                     <Image className="md:rounded-l-3xl rounded-xl " src={trichy} style={{width:'228px'}} />
                     <div className="ml-10 text-xl text-cyan-700 md:mt-2 mt-6 text-left">I studied in Trichy,Tamilnadu for the first 10 yrs of my life.</div>
                 </div>
-                <div className="flex md:flex-row flex-col w-2/3  m-10  rounded-3xl  md:mt-10 shadow-md">
+                <div className="flex md:flex-row flex-col w-2/3  m-10  rounded-3xl  md:mt-10 dark:shadow-md">
                 <Image className=" md:rounded-l-3xl rounded-xl" src={vapi} style={{width:'228px'}} />
                     <div className="ml-10 text-xl text-cyan-700 md:mt-2 mt-6 text-left">I spent the next 9 yrs in Vapi,Gujarat. Studied in St.Xaviers till 10th and studied in Gnyan Dham High School </div>
                 </div>
-                <div className="flex md:flex-row flex-col w-2/3  m-10  rounded-3xl  md:mt-10 shadow-md">
+                <div className="flex md:flex-row flex-col w-2/3  m-10  rounded-3xl  md:mt-10 dark:shadow-md">
                 <Image className=" md:rounded-l-3xl rounded-xl" src={sastra} style={{width:'228px'}} />
                     <div className="ml-10 text-xl text-cyan-700 md:mt-2 mt-6 text-left">Right now i am an undergrad in SASTRA University, studying in 2nd year</div>
                 </div>

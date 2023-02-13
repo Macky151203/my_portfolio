@@ -14,7 +14,7 @@ import pe from '../../images/pe.png'
 export default function Project(){
     return (
         <>
-        <div className="bg-stone-800 dark:bg-gray-200 pb-10 ">
+        <div className="bg-stone-800 dark:bg-gray-200 pb-10 transition-colors duration-500">
         <Navbar />
         <div className="flex flex-row mt-24 m-2 flex-wrap font-mono">
             <div className="flex flex-col m-10 md:w-80">
