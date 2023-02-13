@@ -14,13 +14,18 @@ import {SiJava} from 'react-icons/si'
 import {SiCplusplus} from 'react-icons/si'
 import {TbLetterC} from 'react-icons/tb'
 import {SiFlutter} from 'react-icons/si'
+import {BsArrowUpCircle} from 'react-icons/bs'
+import Link from "next/link"
 
 
 export default function About(){
     return(
         <>
-        <div className="bg-stone-800 dark:bg-gray-100 pb-10 transition-colors duration-500">
+        <div id="tech" className="bg-stone-800 dark:bg-gray-100 pb-10 transition-colors duration-500">
         <Navbar />
+
+        
+
         <div className="flex flex-col justify-center items-center font-mono">
             
                 <div className="flex md:flex-row flex-col w-2/3  m-10 mt-24 rounded-3xl dark:shadow-md">
@@ -55,8 +60,11 @@ export default function About(){
         </div>
  
 
-
+        <div className="flex justify-center">
+        <Link href="#tech" ><BsArrowUpCircle className="animate-bounce" style={{fontSize:'40px'}} /></Link>
         </div>
+        </div>
+        
         </>
     )
 }

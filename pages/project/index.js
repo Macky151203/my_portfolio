@@ -9,12 +9,14 @@ import manage from '../../images/manage.png'
 import mg from '../../images/mg.png'
 import pf from '../../images/pf.png'
 import pe from '../../images/pe.png'
+import {BsArrowUpCircle} from 'react-icons/bs'
+import Link from "next/link"
 
 
 export default function Project(){
     return (
         <>
-        <div className="bg-stone-800 dark:bg-gray-200 pb-10 transition-colors duration-500">
+        <div id="tech" className="bg-stone-800 dark:bg-gray-200 pb-10 transition-colors duration-500">
         <Navbar />
         <div className="flex flex-row mt-24 m-2 flex-wrap font-mono">
             <div className="flex flex-col m-10 md:w-80">
@@ -57,6 +59,9 @@ export default function Project(){
 
         </div>
         <div className="text-cyan-700 text-3xl text-center">Files for all these projects are in my github. Link in Home page</div>
+        <div className="flex justify-center mt-6">
+        <Link href="#tech" ><BsArrowUpCircle className="animate-bounce" style={{fontSize:'40px'}} /></Link>
+        </div>
         </div>
         </>
     )

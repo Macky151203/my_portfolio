@@ -4,18 +4,23 @@ import About from "@/components/me"
 import Contact from "@/components/contact"
 import Connect from "@/components/connect"
 import Footer from "@/components/footer"
+import {BsArrowUpCircle} from 'react-icons/bs'
+import Link from "next/link"
 
 
 export default function Home(){
   return (
     <>
-    <div className="bg-stone-800 dark:bg-gray-100 transition-colors duration-500">
+    <div id="tech" className="bg-stone-800 dark:bg-gray-100 transition-colors duration-500">
     <Navbar />
     <Hero />
     <About />
     <Contact />
     <Connect />
     <Footer />
+    <div className="flex justify-center mt-8">
+        <Link href="#tech" ><BsArrowUpCircle className="animate-bounce" style={{fontSize:'40px'}} /></Link>
+        </div>
     </div>
     </>
   )
