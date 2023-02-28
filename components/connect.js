@@ -25,7 +25,7 @@ export default function Connect(){
             <div>Name- <input className="m-5 border-2 border-gray-700 rounded-md" value={name} onChange={(e)=>setname(e.target.value)} /></div>
             <div>Email- <input className="m-5 border-2 border-gray-700 rounded-md" value={email} onChange={(e)=>setemail(e.target.value)} /></div>
             <div>Comment- <input className="m-5 border-2 border-gray-700 rounded-md" value={comment} onChange={(e)=>setcomment(e.target.value)} /></div>
-            <div className="flex justify-center bg-red-500 w-24 text-gray-300 mt-4 p-1 rounded-2xl transition ease-in-out hover:-translate-y-1"><button onClick={handlesubmit}>Done!</button></div>
+            <div className="flex justify-center bg-red-500 w-24 text-gray-300 mt-4 p-1 rounded-2xl transition ease-in-out hover:-translate-y-1"><button type="submit" onClick={handlesubmit}>Done!</button></div>
         </div>
         
         </div>
