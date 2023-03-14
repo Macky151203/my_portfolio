@@ -15,7 +15,9 @@ import {SiCplusplus} from 'react-icons/si'
 import {TbLetterC} from 'react-icons/tb'
 import {SiFlutter} from 'react-icons/si'
 import {SiPython} from 'react-icons/si'
+import {SiMongodb} from 'react-icons/si'
 import {BsArrowUpCircle} from 'react-icons/bs'
+import {RiStackOverflowLine} from 'react-icons/ri'
 import Link from "next/link"
 import { useState } from "react"
 
@@ -50,7 +52,9 @@ export default function About(){
         </div>
         
         <div className="mt-16 flex flex-col items-center justify-center font-mono">
-            <div className="text-cyan-600 text-4xl">Technology that i am familiar with...</div>
+            <div className="flex flex-row">
+            <div className="text-cyan-600 text-4xl">My Tech Stack</div><span>< RiStackOverflowLine className="ml-4 text-yellow-400 dark:text-green-400" style={{fontSize:'40px'}} /></span>
+            </div>
             <div className="flex flex-row flex-wrap">
                 <div onClick={()=>setval(1)} className="transition ease-in-out duration-500 delay-75 rounded-xl p-2 m-4 bg-slate-400 hover:bg-slate-300 cursor-pointer">All</div>
                 <div onClick={()=>setval(2)} className="transition ease-in-out duration-500 delay-75 rounded-xl p-2 m-4 bg-slate-400 hover:bg-slate-300 cursor-pointer">Frontend</div>
@@ -66,7 +70,8 @@ export default function About(){
             {(val===2 || val===1) && <div className='flex flex-col mx-4 transition delay-75  duration-200 ease-in-out hover:-translate-y-1 m-5' ><a href="https://tailwindcss.com"><SiTailwindcss style={{fontSize:'80px'}} /></a><div className="text-center text-xl font-bold text-cyan-700">Tailwind</div></div>}
             {(val===2 || val===1) && <div className='flex flex-col mx-4 transition delay-75  duration-200 ease-in-out hover:-translate-y-1 m-5' ><a href="https://reactjs.org"><SiReact style={{fontSize:'80px'}} /></a><div className="text-center text-xl font-bold text-cyan-700">React</div></div>}
             {(val===3 || val===1) && <div className='flex flex-col mx-4 transition delay-75  duration-200 ease-in-out hover:-translate-y-1 m-5' ><a href="https://nextjs.org"><TbBrandNextjs style={{fontSize:'80px'}} /></a><div className="text-center text-xl font-bold text-cyan-700">Nextjs</div></div>}
-            {(val===5 || val===1) && <div className='flex flex-col mx-4 transition delay-75  duration-200 ease-in-out hover:-translate-y-1 m-5' ><a href="https://docs.soliditylang.org/en/v0.8.15/index.html"><SiSolidity style={{fontSize:'80px'}} /></a><div className="text-center text-xl font-bold text-cyan-700">Solidity</div></div>}
+            {(val===3 || val===1) && <div className='flex flex-col mx-4 transition delay-75  duration-200 ease-in-out hover:-translate-y-1 m-5' ><a href="https://www.mongodb.com"><SiMongodb style={{fontSize:'80px'}} /></a><div className="text-center text-xl font-bold text-cyan-700">Mongodb</div></div>}
+            
             {(val===5 || val===1) && <div className='flex flex-col mx-4 transition delay-75  duration-200 ease-in-out hover:-translate-y-1 m-5' ><a href="https://www.java.com/en/"><SiJava style={{fontSize:'80px'}} /></a><div className="text-center text-xl font-bold text-cyan-700">Java</div></div>}
             {(val===5 || val===1) && <div className='flex flex-col mx-4 transition delay-75  duration-200 ease-in-out hover:-translate-y-1 m-5' ><a href="https://www.programiz.com/cpp-programming"><SiCplusplus style={{fontSize:'80px'}} /></a><div className="text-center text-xl font-bold text-cyan-700">C++</div></div>}
             {(val===5 || val===1) && <div className='flex flex-col mx-4 transition delay-75  duration-200 ease-in-out hover:-translate-y-1 m-5' ><a href="https://www.w3schools.com/c/c_intro.php"><TbLetterC style={{fontSize:'80px'}} /></a><div className="text-center text-xl font-bold text-cyan-700">C</div></div>}
