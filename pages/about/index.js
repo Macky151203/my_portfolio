@@ -37,15 +37,15 @@ export default function About(){
 
         <div className="flex flex-col justify-center items-center font-mono">
             
-                <div className="dark:bg-red-300  flex md:flex-row flex-col w-2/3  m-10 mt-24 rounded-3xl dark:shadow-md bg-gray-800">
+                <div className="dark:bg-gray-300  flex md:flex-row flex-col w-2/3  m-10 mt-24 rounded-3xl dark:shadow-md  dark:shadow-gray-500 bg-gray-800">
                     <Image className="md:rounded-l-3xl rounded-xl w-auto" src={trichy}  />
                     <div className="md:ml-10 ml-2 mb-2 text-2xl font-semibold dark:text-slate-700 text-cyan-700 md:mt-2 mt-6 text-left">I studied in Trichy,Tamilnadu for the first 10 yrs of my life.</div>
                 </div>
-                <div className="dark:bg-blue-300 flex md:flex-row flex-col w-2/3  m-10  rounded-3xl  md:mt-10 dark:shadow-md  bg-gray-800">
+                <div className="dark:bg-gray-300 flex md:flex-row flex-col w-2/3  m-10  rounded-3xl  md:mt-10 dark:shadow-md dark:shadow-gray-500  bg-gray-800">
                 <Image className=" md:rounded-l-3xl rounded-xl" src={vapi}  />
                     <div className="md:ml-10 ml-2 mb-2 text-2xl font-semibold   dark:text-slate-700 text-cyan-700 md:mt-2 mt-6 text-left">I spent the next 9 yrs in Vapi,Gujarat. Studied in St.Xaviers till 10th and studied in Gnyan Dham High School </div>
                 </div>
-                <div className="dark:bg-green-300 flex md:flex-row flex-col w-2/3  m-10  rounded-3xl  md:mt-10 dark:shadow-md  bg-gray-800">
+                <div className="dark:bg-gray-300 flex md:flex-row flex-col w-2/3  m-10  rounded-3xl  md:mt-10 dark:shadow-md dark:shadow-gray-500  bg-gray-800">
                 <Image className=" md:rounded-l-3xl rounded-xl" src={sastra} />
                     <div className="md:ml-10 ml-2 mb-2 text-2xl font-semibold  dark:text-slate-700 text-cyan-700 md:mt-2 mt-6 text-left">Right now i am an undergrad in SASTRA University, studying in 2nd year</div>
                 </div>
@@ -53,7 +53,7 @@ export default function About(){
         
         <div className="mt-16 flex flex-col items-center justify-center font-mono">
             <div className="flex flex-row">
-            <div className="text-cyan-600 text-4xl">My Tech Stack</div><span>< RiStackOverflowLine className="ml-4 text-yellow-400 dark:text-green-400" style={{fontSize:'40px'}} /></span>
+            <div className="text-cyan-600 text-4xl">My Tech Stack</div><span>< RiStackOverflowLine className="ml-4 text-yellow-400 dark:text-red-400" style={{fontSize:'40px'}} /></span>
             </div>
             <div className="flex flex-row flex-wrap">
                 <div onClick={()=>setval(1)} className="transition ease-in-out duration-500 delay-75 rounded-xl p-2 m-4 bg-slate-400 hover:bg-slate-300 cursor-pointer">All</div>
