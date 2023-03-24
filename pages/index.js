@@ -11,7 +11,7 @@ import Link from "next/link"
 export default function Home(){
   return (
     <>
-    <div id="tech" className="bg-stone-800 dark:bg-gray-100 transition-colors duration-500">
+    <div id="tech" className=" bg-stone-800 dark:bg-gray-100 transition-colors duration-500">
     <Navbar />
     <Hero />
     <About />
@@ -19,7 +19,7 @@ export default function Home(){
     <Connect />
     <Footer />
     <div className="flex justify-center mt-8">
-        <Link href="#tech" ><BsArrowUpCircle className="animate-bounce" style={{fontSize:'40px'}} /></Link>
+        <Link href="#tech" className="scroll-smooth" ><BsArrowUpCircle className="animate-bounce" style={{fontSize:'40px'}} /></Link>
         </div>
     </div>
     </>

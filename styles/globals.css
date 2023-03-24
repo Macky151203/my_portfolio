@@ -2,5 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+#tech{
+    scroll-behavior: smooth;
+}
+
 
   
