@@ -11,11 +11,13 @@ import pf from '../../images/pf.png'
 import pe from '../../images/pe.png'
 import {BsArrowUpCircle} from 'react-icons/bs'
 import Link from "next/link"
+import Layout from "@/components/layout"
 
 
 export default function Project(){
     return (
         <>
+        <Layout>
         <div id="tech" className="bg-stone-800 dark:bg-gray-200 pb-10 transition-colors duration-500">
         <Navbar />
         <div className="flex flex-row mt-24 m-2 flex-wrap font-mono">
@@ -63,6 +65,7 @@ export default function Project(){
         <Link href="#tech" ><BsArrowUpCircle className="animate-bounce" style={{fontSize:'40px'}} /></Link>
         </div>
         </div>
+        </Layout>
         </>
     )
 }

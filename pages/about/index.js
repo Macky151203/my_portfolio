@@ -21,6 +21,7 @@ import {BsArrowUpCircle} from 'react-icons/bs'
 import {RiStackOverflowLine} from 'react-icons/ri'
 import Link from "next/link"
 import { useState } from "react"
+import Layout from "@/components/layout"
 
 
 
@@ -31,8 +32,10 @@ export default function About(){
 
     return(
         <>
+        <Layout>
         <div id="tech" className="bg-stone-800 dark:bg-gray-100 pb-10 transition-colors duration-500">
         <Navbar />
+        
 
         
 
@@ -87,6 +90,7 @@ export default function About(){
         <Link href="#tech" ><BsArrowUpCircle className="animate-bounce" style={{fontSize:'40px'}} /></Link>
         </div>
         </div>
+        </Layout>
         
         </>
     )
