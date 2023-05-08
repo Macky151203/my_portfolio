@@ -13,7 +13,7 @@ export default function Home(){
   return (
     <>
     <Layout>
-    <div id="tech" className=" bg-stone-800 dark:bg-gray-100 transition-colors duration-500">
+    <div id="tech" className="  bg-stone-800 dark:bg-white transition-colors duration-500">
     
     <Navbar />
     <Hero />
