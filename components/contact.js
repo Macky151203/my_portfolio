@@ -26,9 +26,9 @@ export default function Contact() {
                 <div className="md:w-1/3 p-2">
                     <form className="p-2 flex flex-col justify-center items-center mt-8 text-yellow-300 text-xl md:text-2xl ">
                         <div className=" mb-6 text-3xl  font-medium">Wanna connect with me?</div>
-                        <div>Name- <input className="m-5 md:ml-14 border-none border-gray-700 rounded-md" value={name} type="text" required onChange={(e) => setname(e.target.value)} /></div>
-                        <div>Email- <input className="m-5 md:ml-16 border-none border-gray-700 rounded-md" value={email} type="email" required onChange={(e) => setemail(e.target.value)} /></div>
-                        <div>Comment- <input className="m-5 border-none  border-gray-700 rounded-md" value={comment} type="text" required onChange={(e) => setcomment(e.target.value)} /></div>
+                        <div>Name- <input className="m-5 text-md p-2 md:ml-14 border-none border-gray-700 rounded-md" value={name} placeholder="Enter your name" type="text" required onChange={(e) => setname(e.target.value)} /></div>
+                        <div>Email- <input className="m-5 p-2 text-md md:ml-16 border-none border-gray-700 rounded-md" value={email} placeholder="Enter you email" type="email" required onChange={(e) => setemail(e.target.value)} /></div>
+                        <div>Comment- <input className="m-5 p-2 border-none  border-gray-700 rounded-md" value={comment} placeholder="Type what you think" type="text" required onChange={(e) => setcomment(e.target.value)} /></div>
                         <div className="flex justify-center bg-red-500 w-32 text-white mt-4 p-2  rounded-xl transition ease-in-out hover:-translate-y-1"><button type="submit" onClick={handlesubmit}>Submit!</button></div>
                     </form>
                 </div>
