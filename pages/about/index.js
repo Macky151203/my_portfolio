@@ -81,7 +81,7 @@ export default function About(){
             {(val===5 || val===1) && <div className='flex flex-col mx-4 transition delay-75  duration-200 ease-in-out hover:-translate-y-1 m-5' ><a href="https://www.w3schools.com/c/c_intro.php"><TbLetterC style={{fontSize:'80px'}} /></a><div className="text-center text-xl font-bold text-cyan-700">C</div></div>}
             {(val===4 || val===1) && <div className='flex flex-col mx-4 transition delay-75  duration-200 ease-in-out hover:-translate-y-1 m-5' ><a href="https://flutter.dev"><SiFlutter style={{fontSize:'80px'}} /></a><div className="text-center text-xl font-bold text-cyan-700">Flutter</div></div>}
             {(val===6 || val===1) && <div className='flex flex-col mx-4 transition delay-75  duration-200 ease-in-out hover:-translate-y-1 m-5' ><a href="https://www.python.org"><SiPython style={{fontSize:'80px'}} /></a><div className="text-center text-xl font-bold text-cyan-700">Python</div></div>}
-            {(val===6 || val===1) && <div className='flex flex-col mx-4 transition delay-75  duration-200 ease-in-out hover:-translate-y-1 m-5' ><a href="https://scikit-learn.org/stable/"><SiScikitlearn style={{fontSize:'80px'}} /></a><div className="text-center text-xl font-bold text-cyan-700">SciKit</div></div>}
+            {(val===6 || val===1) && <div className='flex flex-col mx-4 transition delay-75  duration-200 ease-in-out hover:-translate-y-1 m-5' ><a href="https://scikit-learn.org/stable/"><SiScikitlearn className="text-cyan-500" style={{fontSize:'80px'}} /></a><div className="text-center text-xl font-bold text-cyan-700">SciKit</div></div>}
         
         </div>
  
