@@ -5,8 +5,8 @@ import Image from 'next/image'
 export default function About(){
     return(
     <>
-        <div className="flex flex-col md:mt-48 mt-12">
-            <div className="text-center font-medium text-4xl text-yellow-300 dark:text-cyan-500" >
+        <div className="flex flex-col md:mt-48 mt-12 font-Ubuntu">
+            <div className="text-center font-medium text-4xl text-yellow-300 dark:text-cyan-500 font-Ubuntu" >
                 About Me
             </div>
             <div className="flex md:flex-row flex-col flex-wrap-reverse p-4  bg-cyan-800  justify-center items-center mt-6">

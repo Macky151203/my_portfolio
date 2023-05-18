@@ -10,11 +10,14 @@ import Layout from "@/components/layout"
 import Skills from "@/components/skills"
 
 
+
 export default function Home(){
   return (
+    
     <>
+   
     <Layout>
-    <div id="tech" className="  bg-stone-800 dark:bg-slate-300 transition-colors duration-500">
+    <div id="tech" className=" bg-stone-800 dark:bg-slate-300 transition-colors duration-500">
     
     <Navbar />
     <Hero />

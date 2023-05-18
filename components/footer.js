@@ -10,7 +10,7 @@ export default function Footer(){
     return (
         <>
         
-        <div className='flex md:flex-row flex-col-reverse justify-around mt-2 p-4'>
+        <div className='flex md:flex-row flex-col-reverse justify-around mt-2 p-4 font-Ubuntu'>
         <div className="flex flex-row justify-center items-center  text-xl mt-8 md:mt-0">
             <div className='ml-3'>Made using</div>
             <TbBrandNextjs className='ml-3' style={{fontSize:'50px'}} />

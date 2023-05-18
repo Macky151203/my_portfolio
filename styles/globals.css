@@ -2,9 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-#tech{
-    scroll-behavior: smooth;
-}
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+
 
 
   
