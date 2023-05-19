@@ -17,7 +17,7 @@ export default function Home(){
     <>
    
     <Layout>
-    <div id="tech" className=" bg-stone-800 dark:bg-slate-300 transition-colors duration-500">
+    <div id="tech" className=" bg-stone-800 dark:bg-slate-300 transition-colors duration-500 ">
     
     <Navbar />
     <Hero />
@@ -29,7 +29,7 @@ export default function Home(){
     <Contact />
     <Connect />
     <div className="flex justify-center mt-8">
-        <Link href="#tech" className="scroll-smooth" ><BsArrowUpCircle className="animate-bounce" style={{fontSize:'40px'}} /></Link>
+        <Link href="#tech"  ><BsArrowUpCircle className="animate-bounce" style={{fontSize:'40px'}} /></Link>
         </div>
     
     <Footer />
