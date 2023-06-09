@@ -69,6 +69,7 @@ export default function Project(){
 
         </div>
         <div className="text-cyan-700 text-3xl text-center">Files for all these projects are in my <a className="text-yellow-400  dark:text-red-500" href="https://github.com/Macky151203" target="_main">Github</a>.</div>
+        <div className="text-cyan-700 text-3xl text-center mt-4">Check out <a className="text-yellow-400  dark:text-red-500" href="https://linktr.ee/Subro20" target="_main">this</a> for data analysis related projects.</div>
         <div className="flex justify-center mt-6">
         <Link href="#tech" ><BsArrowUpCircle className="animate-bounce" style={{fontSize:'40px'}} /></Link>
         </div>
