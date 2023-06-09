@@ -47,11 +47,11 @@ export default function Project(){
             </div>
             <div className="flex flex-col m-10 md:w-80">
                 <Image className="rounded-xl" src={pexp} />
-                <div className="text-center mt-6 text-cyan-600 dark:text-cyan-800 text-xl">A android app made using Flutter which can manage the weekly expense in a distributed manner to keep track of our spendings.</div>
+                <div className="text-center mt-6 text-cyan-600 dark:text-cyan-800 text-xl">An android app made using Flutter which can manage the weekly expense in a distributed manner to keep track of our spendings.</div>
             </div>
             <div className="flex flex-col m-10 md:w-80">
                 <Image className="rounded-xl object-cover" src={meal} />
-                <div className="text-center mt-6 text-cyan-600 dark:text-cyan-800 text-xl">A android app made using Flutter which can manage the weekly expense in a distributed manner to keep track of our spendings.</div>
+                <div className="text-center mt-6 text-cyan-600 dark:text-cyan-800 text-xl">An meals based Native app made using flutter with tab navigation.</div>
             </div>
             <div className="flex flex-col m-10 md:w-80">
                 <Image className="rounded-xl" src={mpf} />
