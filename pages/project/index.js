@@ -43,7 +43,7 @@ export default function Project(){
             </div>
             <div className="flex flex-col m-10 md:w-80 ">
                 <Image className="rounded-xl " src={fend} />
-                <div className=" text-center mt-6 text-cyan-600 dark:text-cyan-800 text-xl">A weather forecast app made using React which shows the current weather conditions of the entered city name. link- <a className="font-bold text-yellow-400 dark:text-red-500" href="https://react-weatherapp-mduj-9n32w9cdv-macky151203.vercel.app" target="_main">Click here</a></div>
+                <div className=" text-center mt-6 text-cyan-600 dark:text-cyan-800 text-xl">A Frontend web app made using tailwindcss link- <a className="font-bold text-yellow-400 dark:text-red-500" href="https://dcs-rose.vercel.app" target="_main">Click here</a></div>
             </div>
             <div className="flex flex-col m-10 md:w-80">
                 <Image className="rounded-xl" src={pexp} />
