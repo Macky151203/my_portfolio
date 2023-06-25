@@ -20,8 +20,8 @@ export default function Project(){
         <Layout>
         <div id="tech" className="bg-stone-800 dark:bg-gray-200 pb-10 transition-colors duration-500">
         <Navbar />
-        <div className="flex flex-row mt-24 m-2 flex-wrap font-mono">
-            <div className="flex flex-col m-10 md:w-80">
+        <div className="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3  xl:grid-cols-4 gap-1 mt-24  font-mono">
+            <div className="flex flex-col m-6 md:w-80">
                 <Image className="rounded-xl" src={travelapp} />
                 <div className="text-center mt-6 text-cyan-600 dark:text-cyan-800 text-xl">My first project was a travel ticket booking frontend made using svelte for DAKSH hackathon 22</div>
             </div>
@@ -37,31 +37,31 @@ export default function Project(){
                 <Image className="rounded-xl" src={mg} />
                 <div className="text-center mt-6 text-cyan-600 dark:text-cyan-800 text-xl">A Memegenerator made using React.Didn't deploy it.</div>
             </div> */}
-            <div className="flex flex-col m-10 md:w-80 ">
+            <div className="flex flex-col m-6 md:w-80 ">
                 <Image className="rounded-xl object-cover" src={weather} />
                 <div className=" text-center mt-6 text-cyan-600 dark:text-cyan-800 text-xl">A weather forecast app made using React which shows the current weather conditions of the entered city name. link- <a className="font-bold text-yellow-400 dark:text-red-500" href="https://react-weatherapp-mduj-9n32w9cdv-macky151203.vercel.app" target="_main">Click here</a></div>
             </div>
-            <div className="flex flex-col m-10 md:w-80 ">
+            <div className="flex flex-col m-6 md:w-80 ">
                 <Image className="rounded-xl " src={fend} />
                 <div className=" text-center mt-6 text-cyan-600 dark:text-cyan-800 text-xl">A Frontend web app made using tailwindcss link- <a className="font-bold text-yellow-400 dark:text-red-500" href="https://dcs-rose.vercel.app" target="_main">Click here</a></div>
             </div>
-            <div className="flex flex-col m-10 md:w-80">
+            <div className="flex flex-col m-6 md:w-80">
                 <Image className="rounded-xl" src={pexp} />
                 <div className="text-center mt-6 text-cyan-600 dark:text-cyan-800 text-xl">An android app made using Flutter which can manage the weekly expense in a distributed manner to keep track of our spendings.</div>
             </div>
-            <div className="flex flex-col m-10 md:w-80">
+            <div className="flex flex-col m-6 md:w-80">
                 <Image className="rounded-xl object-cover" src={meal} />
                 <div className="text-center mt-6 text-cyan-600 dark:text-cyan-800 text-xl">An meals based Native app made using flutter with tab navigation.</div>
             </div>
-            <div className="flex flex-col m-10 md:w-80">
+            <div className="flex flex-col m-6 md:w-80">
                 <Image className="rounded-xl" src={mpf} />
                 <div className="text-center mt-6 text-cyan-600 dark:text-cyan-800 text-xl">This website made using Nextjs. Deployed in vercel</div>
             </div>
-            <div className="flex flex-col m-10 md:w-80">
+            <div className="flex flex-col m-6 md:w-80">
                 <Image className="rounded-xl" src={manage} />
                 <div className="text-center mt-6 text-cyan-600 dark:text-cyan-800 text-xl">Made a Manage web app using tailwind for club recruitment</div>
             </div>
-            <div className="flex flex-col m-10 md:w-80 items-center justify-center">
+            <div className="flex flex-col m-6 md:w-80 items-center justify-center">
                 
                 <div className="text-center mt-6 text-cyan-600 dark:text-cyan-800 text-3xl">More to come...</div>
             </div>
