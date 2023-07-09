@@ -8,7 +8,7 @@ import {TbBrandNextjs} from 'react-icons/tb'
 
 import {SiFlutter} from 'react-icons/si'
 import {SiPython} from 'react-icons/si'
-import {SiMongodb} from 'react-icons/si'
+import {SiScikitlearn} from 'react-icons/si'
 
 
 
@@ -27,7 +27,7 @@ export default function Skills(){
                 <div className='cursor-pointer transition ease-in-out hover:-translate-y-1 p-4 rounded-lg bg-gray-800 shadow-2xl flex flex-col justify-center items-center'><TbBrandNextjs style={{fontSize:'70px'}} className='text-orange-400' /><div className='mt-2 text-yellow-300'>Nextjs</div></div>
                 <div className='cursor-pointer transition ease-in-out hover:-translate-y-1 p-4 rounded-lg bg-gray-800 shadow-2xl flex flex-col justify-center items-center'><SiPython style={{fontSize:'70px'}} className='text-orange-400' /><div className='mt-2 text-yellow-300'>Python</div></div>
                 <div className='cursor-pointer transition ease-in-out hover:-translate-y-1 p-4 rounded-lg bg-gray-800 shadow-2xl flex flex-col justify-center items-center'><SiFlutter style={{fontSize:'70px'}} className='text-orange-400' /><div className='mt-2 text-yellow-300'>Flutter</div></div>
-                <div className='cursor-pointer transition ease-in-out hover:-translate-y-1 p-4 rounded-lg bg-gray-800 shadow-2xl flex flex-col justify-center items-center'><SiMongodb style={{fontSize:'70px'}} className='text-orange-400' /><div className='mt-2 text-yellow-300'>MongoDB</div></div>
+                <div className='cursor-pointer transition ease-in-out hover:-translate-y-1 p-4 rounded-lg bg-gray-800 shadow-2xl flex flex-col justify-center items-center'><SiScikitlearn style={{fontSize:'70px'}} className='text-orange-400' /><div className='mt-2 text-yellow-300'>Scikit learn</div></div>
                 
             </div>
         </div>
