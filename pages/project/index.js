@@ -66,7 +66,7 @@ export default function Project(){
            
                 <Image className="rounded-xl hover:cursor-pointer hover:blur-sm"  src={chat} />
                 
-                <div className="text-center mt-6 text-cyan-600 dark:text-cyan-800 text-xl">Made a Ai chat similar to chatgpt using vercel's ai sdk and supabase, Some part of app is still under development</div>
+                <div className="text-center mt-6 text-cyan-600 dark:text-cyan-800 text-xl">Made a Ai chat similar to chatgpt using vercel's ai sdk and supabase, Some part of app is still under development, link- <a className="font-bold text-yellow-400 dark:text-red-500" href="https://temp-pi-two.vercel.app" target="_main">Click here</a></div>
             </div>
             <div className="flex flex-col m-6 md:w-80 items-center justify-center">
                 
