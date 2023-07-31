@@ -8,25 +8,33 @@ import {BsArrowUpCircle} from 'react-icons/bs'
 import Link from "next/link"
 import Layout from "@/components/layout"
 import Skills from "@/components/skills"
+import Layout3 from "@/components/popin/page"
+
 
 
 
 export default function Home(){
+ 
   return (
     
     <>
    
     <Layout>
+
+    
     <div id="tech" className=" bg-stone-800 dark:bg-slate-300 transition-colors duration-500 ">
-    
     <Navbar />
-    <Hero />
-    <About/>
-    <div id="skills">
-    <Skills />
-    </div>
+    <Layout3><Hero /></Layout3>
     
-    <Contact />
+    <Layout3><About/></Layout3>
+    
+    <div id="skills">
+      <Layout3><Skills /></Layout3>
+    
+    </div>
+    <Layout3><Contact /></Layout3>
+    
+    
     <Connect />
     <div className="flex justify-center mt-8">
         <Link href="#tech"  ><BsArrowUpCircle className="animate-bounce" style={{fontSize:'40px'}} /></Link>

@@ -4,6 +4,7 @@ import pfimg from "../images/code.png"
 import Link from 'next/link'
 import React from 'react';
 import Typed from 'typed.js';
+import Layout2 from './imageslayout';
 
 
 
@@ -13,7 +14,7 @@ export default function Hero() {
 
   React.useEffect(() => {
     var typed = new Typed(el.current, {
-      strings: ['CSE Undergrad', 'Web developer'],
+      strings: ['CSE Undergrad','Data Science Enthusiast', 'Web developer'],
       typeSpeed: 80,
     });
 
@@ -37,7 +38,9 @@ export default function Hero() {
 
         </div>
         <div className="p-5 md:w-1/3 md:ml-20 md:mr-20 md:h-80 flex justify-start items-center">
+        
           <Image className='' src={pfimg} style={{ width: '560px' }} />
+          
 
 
 
