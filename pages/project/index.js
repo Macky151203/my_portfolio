@@ -12,13 +12,13 @@ import pexp from '../../images/pexp.png'
 import chat from '../../images/chat.png'
 import {BsArrowUpCircle} from 'react-icons/bs'
 import Link from "next/link"
-import Layout from "@/components/layout"
+import Layout2 from "@/components/imageslayout"
 
 
 export default function Project(){
     return (
         <>
-        <Layout>
+        <Layout2 >
         <div id="tech" className="bg-stone-800 dark:bg-gray-200 pb-10 transition-colors duration-500">
         <Navbar />
         <div className="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3  xl:grid-cols-4 gap-1 mt-24  font-mono overflow-x-hidden">
@@ -81,7 +81,7 @@ export default function Project(){
         <Link href="#tech" ><BsArrowUpCircle className="animate-bounce" style={{fontSize:'40px'}} /></Link>
         </div>
         </div>
-        </Layout>
+        </Layout2>
         </>
     )
 }

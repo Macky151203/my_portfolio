@@ -9,6 +9,7 @@ import Link from "next/link"
 import Layout from "@/components/layout"
 import Skills from "@/components/skills"
 import Layout3 from "@/components/popin/page"
+import Layout2 from "@/components/imageslayout"
 
 
 
@@ -19,7 +20,7 @@ export default function Home(){
     
     <>
    
-    <Layout>
+    <Layout2 >
 
     
     <div id="tech" className=" bg-stone-800 dark:bg-slate-300 transition-colors duration-500 ">
@@ -43,7 +44,7 @@ export default function Home(){
     <Footer />
     </div>
     
-    </Layout>
+    </Layout2 >
     </>
   )
 }
