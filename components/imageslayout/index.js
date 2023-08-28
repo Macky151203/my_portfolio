@@ -8,7 +8,7 @@ const Layout2 = ({ children }) => (
     // transition={{
     //     ease: "linear",
     //     duration: 2,
-    //     x: { duration: 1 }
+    //     x: { duration: 4 }
     //   }}
     initial={{ opacity: 0}}
     animate={{ opacity: 1}}
