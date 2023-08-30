@@ -11,6 +11,8 @@ import Skills from "@/components/skills"
 import Layout3 from "@/components/popin/page"
 import Layout2 from "@/components/imageslayout"
 import {Ubuntu} from '@next/font/google'
+import { useEffect,useState } from "react"
+// import '../styles/style.css'
 const ubuntu=Ubuntu({
   subsets:['latin'],
   weight:'400',
@@ -21,6 +23,19 @@ const ubuntu=Ubuntu({
 
 
 export default function Home() {
+  const[navColor,updateNavbar]=useState(false)
+  useEffect(()=>{
+    function scrollHandler() {
+      if (window.scrollY >= 20) {
+        updateNavbar(true);
+      } else {
+        updateNavbar(false);
+      }
+    }
+    scrollHandler()
+    window.addEventListener("scroll", scrollHandler);
+  
+  })
 
   return (
 
@@ -30,7 +45,7 @@ export default function Home() {
 
 
         <div id="tech" className={`${ubuntu.className} bg-stone-800 dark:bg-slate-300 transition-colors scroll-smooth duration-500 `}>
-          <Navbar />
+          <Navbar navColor={navColor} />
           <Layout3><Hero /></Layout3>
 
           <Layout3><About /></Layout3>
