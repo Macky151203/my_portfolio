@@ -1,9 +1,9 @@
 import Navbar from "@/components/navbar"
-import { Suspense, lazy ,SuspenseImage} from "react"
+import { Suspense, lazy, SuspenseImage } from "react"
 import Image from "next/image"
-import vapi from '../../images/vapi.jpg'
+
 import travelapp from '../../images/travelapp.png'
-import clock from '../../images/clock.png'
+
 import mpf from '../../images/mpf.png'
 import weather from '../../images/weather.png'
 import manage from '../../images/manage.png'
@@ -11,73 +11,134 @@ import fend from '../../images/fend.png'
 import meal from '../../images/meal.png'
 import pexp from '../../images/pexp.png'
 import chat from '../../images/chat.png'
-
+import Box from '@mui/material/Box'
+import Paper from '@mui/material/Paper';
+import Masonry from '@mui/lab/Masonry';
+import { styled } from '@mui/material/styles';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { BsArrowUpCircle } from 'react-icons/bs'
 import Link from "next/link"
 import Layout2 from "@/components/imageslayout"
 import Loading from "@/components/loading"
 import { Ubuntu } from "@next/font/google"
+import { useMediaQuery } from '@mui/material';
+import {
+    Accordion,
+    AccordionDetails,
+    AccordionSummary,
+    Typography,
+} from '@mui/material';
 // import Card from "@/components/card"
-const Card= lazy(()=>import('../../components/card.js'))
-const ubuntu=Ubuntu({
-    subsets:['latin'],
-    weight:'400',
-  })
+const Card = lazy(() => import('../../components/card.js'))
+const ubuntu = Ubuntu({
+    subsets: ['latin'],
+    weight: '400',
+})
 
 
 export default function Project() {
+    const matches = useMediaQuery('(min-width:600px)');
+    const StyledAccordion = styled(Accordion)(({ theme }) => ({
+        backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#1A2027',
+        color: 'wheat',
+    }));
+    const Label = styled(Paper)(({ theme }) => ({
+        backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#1A2027',
+        ...theme.typography.body2,
+        padding: theme.spacing(0.5),
+        textAlign: 'center',
+        color: "wheat",
+        borderBottomLeftRadius: 0,
+        borderBottomRightRadius: 0,
+    }));
+    const itemData = [
+        {
+            img: travelapp,
+            title: 'TravelApp',
+            desc: 'Travel app frontend made for Daksh Hackathon',
+        
+            // link:''
+        },
+        {
+            img: fend,
+            title: 'Landing page',
+            desc: 'A landing page made for club recruitment',
+            link: 'https://dcs-rose.vercel.app',
+            github:'https://github.com/Macky151203/dcs'
+        },
+        {
+            img: meal,
+            title: 'Meal App',
+            desc: 'A meal app made using Flutter',
+            
+        },
+        {
+            img: chat,
+            title: 'AiChat',
+            desc: 'An AI chat app made using vercel AI SDK',
+            link: 'https://temp-pi-two.vercel.app',
+            github:'https://github.com/Macky151203/temp'
+        },
+        {
+            img: mpf,
+            title: 'Portfolio',
+            desc: 'This website made using Nextjs and Tailwindcss',
+            github:'https://github.com/Macky151203/mpf'
+        },
+        {
+            img: weather,
+            title: 'Weather App',
+            desc: 'A Weather app made using React and openweather api',
+            link: 'https://react-weatherapp-mduj-9n32w9cdv-macky151203.vercel.app',
+            github:'https://github.com/Macky151203/React_weatherapp',
+        },
+        {
+            img: manage,
+            title: 'Landing page',
+            desc: 'A landing page made using Tailwindcss'
+        },
+        {
+            img: pexp,
+            title: 'Expense manager',
+            desc: 'An expense manageing app made using Flutter',
+            github:'https://github.com/Macky151203/Flutter_expense_App/tree/master'
+        },
+
+
+
+    ];
+
     return (
         <>
             <Layout2 >
                 <div id="tech" className={`${ubuntu.className} bg-stone-800 dark:bg-gray-200 pb-10 transition-colors duration-500`} >
                     <Navbar />
-                    <div className="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3  xl:grid-cols-4 gap-1 mt-24  overflow-x-hidden">
-                        <Suspense fallback={<div>Loading...</div>}>
-                        <Card src={travelapp} content='My first project was a travel ticket booking frontend made using svelte for DAKSH hackathon 22' />
-                        </Suspense>
-                        
-                        <Card src={weather} hr='https://react-weatherapp-mduj-9n32w9cdv-macky151203.vercel.app' content='A weather forecast app made using React which shows the current weather conditions of the entered city name.'/>
-                        <div className="flex flex-col m-6 md:w-80 dark:shadow-md p-1 rounded-md ">
-                            <Image className="rounded-xl hover:cursor-pointer hover:blur-sm " src={fend} />
-                            <div className=" text-center mt-6 text-cyan-600 dark:text-cyan-800 text-xl">A Frontend web app made using tailwindcss link- <a className="font-bold text-yellow-400 dark:text-red-500" href="https://dcs-rose.vercel.app" target="_main">Click here</a></div>
-                        </div>
-                        <div className="flex flex-col m-6 md:w-80 dark:shadow-md p-1 rounded-md">
-                            <Image className="rounded-xl hover:cursor-pointer hover:blur-sm" src={pexp} />
-                            <div className="text-center mt-6 text-cyan-600 dark:text-cyan-800 text-xl">An android app made using Flutter which can manage the weekly expense in a distributed manner to keep track of our spendings.</div>
-                        </div>
-                        <div className="flex flex-col m-6 md:w-80 dark:shadow-md p-1 rounded-md">
-                            <Image className="rounded-xl hover:cursor-pointer hover:blur-sm object-cover" src={meal} />
-                            <div className="text-center mt-6 text-cyan-600 dark:text-cyan-800 text-xl">An meals based Native app made using flutter with tab navigation.</div>
-                        </div>
-                        <div className="flex flex-col m-6 md:w-80 dark:shadow-md p-1 rounded-md">
-                            <Image className="rounded-xl hover:cursor-pointer hover:blur-sm" src={mpf} />
-                            <div className="text-center mt-6 text-cyan-600 dark:text-cyan-800 text-xl">This website made using Nextjs. Deployed in vercel</div>
-                        </div>
-                        {/* <div className="flex flex-col m-6 md:w-80 dark:shadow-md p-1 rounded-md">
-                            <Image className="rounded-xl hover:cursor-pointer hover:blur-sm" src={manage} />
-                            <div className="text-center mt-6 text-cyan-600 dark:text-cyan-800 text-xl"></div>
-                        </div> */}
-                        <Card src={manage} content='Made a Manage web app using tailwind for club recruitment' />
-                        <div className="flex flex-col m-6 md:w-80 dark:shadow-md p-1 rounded-md ">
-                            <Suspense fallback={<Loading />}>
+                    <div className=" flex items-center ml-6 text-lg text-white justify-center mt-6">
 
-                                <Image className="rounded-xl hover:cursor-pointer hover:blur-sm" src={chat} />
+                        <Box sx={{ width: 1000, minHeight: 829 }}>
+                            <Masonry columns={matches ? 2 : 1} spacing={6} >
+                                {itemData.map((item, index) => (
+                                    <div className="shadow-xl" key={index} >
+                                        {/* <Label>{item.title}</Label> */}
+                                        <StyledAccordion >
+                                            <AccordionSummary expandIcon={<ExpandMoreIcon className="text-white" />}>
+                                                <Typography className={`${ubuntu.className} text-lg`}>➡️{item.title}</Typography>
+                                            </AccordionSummary>
+                                            <AccordionDetails>{item.desc}</AccordionDetails>
+                                            <AccordionDetails>{item.link ? <a href={item?.link}><button className="p-1 px-2 bg-red-500 hover:bg-red-400 rounded-lg">Visit</button></a> : ''}  {item.github ? <a href={item?.github}><button className="p-1 px-2 bg-red-500 hover:bg-red-400 rounded-lg">Github</button></a> : ''}</AccordionDetails>
+                                        </StyledAccordion>
 
-                            </Suspense>
-                            <div className="text-center mt-6 text-cyan-600 dark:text-cyan-800 text-xl">Made a Ai chat similar to chatgpt using vercel's ai sdk and Firebase, link- <a className="font-bold text-yellow-400 dark:text-red-500" href="https://temp-pi-two.vercel.app" target="_main">Click here</a></div>
-                        </div>
-                        {/* <div className="m-6 md:w-80">
-                            <Loading />
-                        </div> */}
-                        <div className="flex flex-col m-6 md:w-80 items-center justify-center">
-
-                            <div className="text-center mt-6 text-cyan-600 dark:text-cyan-800 text-3xl">More to come...</div>
-                        </div>
-
-
+                                        <Image className="rounded-md" src={item.img} />
+                                    </div>
+                                ))}
+                            </Masonry>
+                        </Box>
                     </div>
-                    <div className="text-cyan-700 text-3xl text-center">Files for all these projects are in my <a className="text-yellow-400  dark:text-red-500" href="https://github.com/Macky151203" target="_main">Github</a>.</div>
-                    <div className="text-cyan-700 text-3xl text-center mt-4">Check out <a className="text-yellow-400  dark:text-red-500" href="https://linktr.ee/Subro20" target="_main">this</a> for data analysis related projects.</div>
+
+
+                    
+                    <div className="text-cyan-700 text-xl md:text-3xl text-center">Files for all these projects are in my <a className="text-yellow-400  dark:text-red-500" href="https://github.com/Macky151203" target="_main">Github</a>.</div>
+                    <div className="text-cyan-700 text-xl md:text-3xl text-center mt-4">Check out <a className="text-yellow-400  dark:text-red-500" href="https://linktr.ee/Subro20" target="_main">this</a> for data analysis related projects.</div>
                     <div className="flex justify-center mt-6">
                         <Link href="#tech" ><BsArrowUpCircle className="animate-bounce" style={{ fontSize: '40px' }} /></Link>
                     </div>
@@ -91,4 +152,4 @@ async function delay(promise) {
         setTimeout(resolve, 5000)
     })
     return promise
-  }
+}
