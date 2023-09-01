@@ -120,7 +120,7 @@ export default function Project() {
                                 {itemData.map((item, index) => (
                                     <div className="shadow-xl" key={index} >
                                         {/* <Label>{item.title}</Label> */}
-                                        <StyledAccordion >
+                                        <StyledAccordion className="rounded-t-md rounded-b-none" >
                                             <AccordionSummary expandIcon={<ExpandMoreIcon className="text-white" />}>
                                                 <Typography className={`${ubuntu.className} text-lg`}>➡️{item.title}</Typography>
                                             </AccordionSummary>
@@ -128,7 +128,7 @@ export default function Project() {
                                             <AccordionDetails>{item.link ? <a href={item?.link}><button className="p-1 px-2 bg-red-500 hover:bg-red-400 rounded-lg">Visit</button></a> : ''}  {item.github ? <a href={item?.github}><button className="p-1 px-2 bg-red-500 hover:bg-red-400 rounded-lg">Github</button></a> : ''}</AccordionDetails>
                                         </StyledAccordion>
 
-                                        <Image className="rounded-md" src={item.img} />
+                                        <Image className="rounded-b-md" src={item.img} />
                                     </div>
                                 ))}
                             </Masonry>
