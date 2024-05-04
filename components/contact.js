@@ -24,11 +24,11 @@ export default function Contact() {
             <div className="text-yellow-300 text-4xl font-medium dark:text-cyan-500">Contact</div>
             <div className="w-full justify-center flex-wrap-reverse items-center flex md:flex-row flex-col bg-cyan-800 mt-8">
                 <div className="md:w-1/3 p-2">
-                    <form className="p-2 font-Ubuntu flex flex-col justify-center items-center mt-8 text-yellow-300 text-xl md:text-2xl ">
+                    <form className="p-2 font-Ubuntu flex flex-col justify-center items-start mt-8 text-yellow-300 text-xl md:text-2xl ">
                         <div className=" mb-6 text-3xl  font-medium">Wanna connect with me?</div>
-                        <div>Name- <input className="m-5 text-black text-md p-2 md:ml-14 border-none rounded-md" value={name} placeholder="Enter your name" type="text" required onChange={(e) => setname(e.target.value)} /></div>
-                        <div>Email- <input className="m-5 text-black p-2 text-md md:ml-16 border-none rounded-md" value={email} placeholder="Enter you email" type="email" required onChange={(e) => setemail(e.target.value)} /></div>
-                        <div>Comment- <input className="m-5 text-black p-2 border-none   rounded-md" value={comment} placeholder="Type what you think" type="text" required onChange={(e) => setcomment(e.target.value)} /></div>
+                        <input className="m-5 text-black text-md p-2 border-none rounded-lg" value={name} placeholder="Enter your name" type="text" required onChange={(e) => setname(e.target.value)} />
+                        <input className="m-5 text-black p-2 text-md  border-none rounded-lg" value={email} placeholder="Enter you email" type="email" required onChange={(e) => setemail(e.target.value)} />
+                        <input className="m-5 text-black p-2 border-none   rounded-lg" value={comment} placeholder="Type what you think" type="text" required onChange={(e) => setcomment(e.target.value)} />
                         <div className="flex justify-center bg-red-500 w-32 text-white mt-4 p-2  rounded-xl transition ease-in-out hover:-translate-y-1"><button type="submit" onClick={handlesubmit}>Submit!</button></div>
                     </form>
                 </div>

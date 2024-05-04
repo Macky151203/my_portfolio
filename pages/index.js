@@ -47,7 +47,7 @@ export default function Home() {
         <div id="tech" className={`${ubuntu.className} bg-stone-800 dark:bg-slate-300 transition-colors scroll-smooth duration-500 `}>
           <Navbar navColor={navColor} />
           <Layout3><Hero /></Layout3>
-
+          
           <Layout3><About /></Layout3>
 
           <div id="skills">

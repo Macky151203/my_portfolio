@@ -3,12 +3,12 @@ import { Suspense, lazy, SuspenseImage } from "react"
 import Image from "next/image"
 
 import travelapp from '../../images/travelapp.png'
-
+import ai from '../../images/ai.png'
 import mpf from '../../images/mpf.png'
 import weather from '../../images/weather.png'
 import manage from '../../images/manage.png'
 import fend from '../../images/fend.png'
-import meal from '../../images/meal.png'
+import tm from '../../images/tm.png'
 import pexp from '../../images/pexp.png'
 import chat from '../../images/chat.png'
 import Box from '@mui/material/Box'
@@ -28,6 +28,7 @@ import {
     AccordionSummary,
     Typography,
 } from '@mui/material';
+import { tmpdir } from "os"
 // import Card from "@/components/card"
 const Card = lazy(() => import('../../components/card.js'))
 const ubuntu = Ubuntu({
@@ -52,13 +53,13 @@ export default function Project() {
         borderBottomRightRadius: 0,
     }));
     const itemData = [
-        {
-            img: travelapp,
-            title: 'TravelApp',
-            desc: 'Travel app frontend made for Daksh Hackathon',
+        // {
+        //     img: travelapp,
+        //     title: 'TravelApp',
+        //     desc: 'Travel app frontend made for Daksh Hackathon',
         
-            // link:''
-        },
+        //     // link:''
+        // },
         {
             img: fend,
             title: 'Landing page',
@@ -66,14 +67,14 @@ export default function Project() {
             link: 'https://dcs-rose.vercel.app',
             github:'https://github.com/Macky151203/dcs'
         },
-        {
-            img: meal,
-            title: 'Meal App',
-            desc: 'A meal app made using Flutter',
+        // {
+        //     img: meal,
+        //     title: 'Meal App',
+        //     desc: 'A meal app made using Flutter',
             
-        },
+        // },
         {
-            img: chat,
+            img: ai,
             title: 'AiChat',
             desc: 'An AI chat app made using vercel AI SDK',
             link: 'https://temp-pi-two.vercel.app',
@@ -93,16 +94,23 @@ export default function Project() {
             github:'https://github.com/Macky151203/React_weatherapp',
         },
         {
-            img: manage,
-            title: 'Landing page',
-            desc: 'A landing page made using Tailwindcss'
+            img: tm,
+            title: 'Task Manager',
+            desc: 'A Task managing app made using Reactjs',
+            link: 'https://internwork-five.vercel.app',
+            github:'https://github.com/Macky151203?tab=repositories',
         },
-        {
-            img: pexp,
-            title: 'Expense manager',
-            desc: 'An expense manageing app made using Flutter',
-            github:'https://github.com/Macky151203/Flutter_expense_App/tree/master'
-        },
+        // {
+        //     img: manage,
+        //     title: 'Landing page',
+        //     desc: 'A landing page made using Tailwindcss'
+        // },
+        // {
+        //     img: pexp,
+        //     title: 'Expense manager',
+        //     desc: 'An expense manageing app made using Flutter',
+        //     github:'https://github.com/Macky151203/Flutter_expense_App/tree/master'
+        // },
 
 
 
