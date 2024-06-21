@@ -9,6 +9,7 @@ import weather from '../../images/weather.png'
 import manage from '../../images/manage.png'
 import fend from '../../images/fend.png'
 import tm from '../../images/tm.png'
+import ecom from '../../images/ecom.png'
 import pexp from '../../images/pexp.png'
 import chat from '../../images/chat.png'
 import Box from '@mui/material/Box'
@@ -80,6 +81,13 @@ export default function Project() {
             link: 'https://temp-pi-two.vercel.app',
             github:'https://github.com/Macky151203/temp'
         },
+        {
+          img: ecom,
+          title: 'Ecommerce app',
+          desc: 'An Ecommerce app made using Nextjs, Supabase and stripe for payments',
+          link: 'https://payment-bice.vercel.app',
+          github:'https://github.com/Macky151203/temp'
+      },
         {
             img: mpf,
             title: 'Portfolio',
