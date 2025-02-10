@@ -22,8 +22,8 @@ export default function Footer(){
 
         </div>
         <div className='flex flex-row justify-center items-center text-xl'>
-            <a href='/'><AiFillTwitterCircle className=' dark:text-red-400 ml-4 transition ease-in-out hover:-translate-y-1' style={{fontSize:'50px'}} /></a>
-           <a href='https://github.com/Macky151203'><BsGithub className='dark:text-green-400 ml-4 transition ease-in-out hover:-translate-y-1' style={{fontSize:'50px'}}  /></a>
+            <a href='/'><AiFillTwitterCircle className=' dark:text-blue-600 ml-4 transition ease-in-out hover:-translate-y-1' style={{fontSize:'50px'}} /></a>
+           <a href='https://github.com/Macky151203'><BsGithub className=' ml-4 transition ease-in-out hover:-translate-y-1' style={{fontSize:'50px'}}  /></a>
             <a href='https://www.linkedin.com/feed/'><BsLinkedin className=' dark:text-blue-400 ml-4 transition ease-in-out hover:-translate-y-1' style={{fontSize:'50px'}}  /></a>
             
         </div>

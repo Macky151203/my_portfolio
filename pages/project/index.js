@@ -12,6 +12,8 @@ import tm from '../../images/tm.png'
 import ecom from '../../images/ecom.png'
 import pexp from '../../images/pexp.png'
 import chat from '../../images/chat.png'
+import rchat from '../../images/rchat.png'
+import musick from '../../images/musick.png'
 import Box from '@mui/material/Box'
 import Paper from '@mui/material/Paper';
 import Masonry from '@mui/lab/Masonry';
@@ -77,7 +79,7 @@ export default function Project() {
         {
             img: ai,
             title: 'AiChat',
-            desc: 'An AI chat app made using vercel AI SDK',
+            desc: 'An AI chat app made using vercel AI SDK and firebase',
             link: 'https://temp-pi-two.vercel.app',
             github:'https://github.com/Macky151203/temp'
         },
@@ -108,6 +110,20 @@ export default function Project() {
             link: 'https://internwork-five.vercel.app',
             github:'https://github.com/Macky151203?tab=repositories',
         },
+        {
+          img: rchat,
+          title: 'Realtime chat',
+          desc: 'A realtime chat application made using websockets and nextjs, backend deployed on render. Users can create room and talk to each others(no db involved)',
+          link: 'https://realtime-chat-puce.vercel.app',
+          github:'https://github.com/Macky151203/chat_frontend',
+      },
+      {
+        img: musick,
+        title: 'musick',
+        desc: 'A music or youtube video streaming application where audience can choose the songs to be streamed and upvote or downvote for each creators, made using websockets , prisma and nextjs',
+        link: 'https://musick-beta.vercel.app',
+        github:'https://github.com/Macky151203/musick',
+    },
         // {
         //     img: manage,
         //     title: 'Landing page',
